@@ -2,21 +2,17 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen((prev) => !prev);
-
   return (
-    <div className="w-screen bg-red-300">
+    <div className="w-screen bg-[#f7f7f7] fixed top-0 ">
       <nav className="  sticky top-0 z-50 mx-auto   main-container ">
         <div className=" mx-auto px-4 py-3 flex justify-between items-center">
-          <Link to="/" className="text-xl font-bold text-blue-600">
+          <Link to="/" className="text-xl font-bold font-primay">
             Connect
           </Link>
-
           <div className="hidden md:flex space-x-6 items-center text-gray-800">
             <Link to="/" className="hover:text-blue-500">
               Home
@@ -46,7 +42,6 @@ const Navbar = () => {
               </Link>
             )}
           </div>
-
           <button className="md:hidden text-gray-800" onClick={toggleMenu}>
             {menuOpen ? (
               <CloseIcon fontSize="large" />
@@ -55,7 +50,6 @@ const Navbar = () => {
             )}
           </button>
         </div>
-
         {menuOpen && (
           <div className="md:hidden bg-white px-6 py-4 shadow space-y-3">
             <Link
