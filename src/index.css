@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.main-container {
+  width: 100%;
+  max-width: 1280px;
+}
+.font-primay {
+  color: #ff863b;
+}
+* {
+  box-sizing: border-box;
+}
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
