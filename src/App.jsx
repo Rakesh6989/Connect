@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Reels from "./Pages/Reels";
+import ShortClips from "./Pages/ShortClips";
 import Marketplace from "./Pages/Marketplace";
 import Profile from "./Pages/Profile";
 import Login from "./Pages/Login";
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/reels" element={<Reels />} />
+        <Route path="/short-clips" element={<ShortClips />} />
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />

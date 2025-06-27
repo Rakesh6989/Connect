@@ -84,33 +84,7 @@ const Home = () => {
         <PostCreator/>
       <h2 className="text-2xl font-bold mb-6 text-center">📢 Latest Posts</h2>
 
-      {/* Post Creation Box */}
-      <div className="bg-white p-4 rounded-xl shadow mb-6 max-w-xl mx-auto">
-        <input
-          type="text"
-          placeholder="What's on your mind?"
-          value={newPost.caption}
-          onChange={(e) =>
-            setNewPost((prev) => ({ ...prev, caption: e.target.value }))
-          }
-          className="w-full border border-gray-300 rounded px-4 py-2 mb-2"
-        />
-        <input
-          type="text"
-          placeholder="Image URL (optional)"
-          value={newPost.image}
-          onChange={(e) =>
-            setNewPost((prev) => ({ ...prev, image: e.target.value }))
-          }
-          className="w-full border border-gray-300 rounded px-4 py-2 mb-2"
-        />
-        <button
-          onClick={handlePostSubmit}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Post
-        </button>
-      </div>
+   
 
       {/* Posts Display */}
       {allPostsData.slice(0, visibleCount).map((post) => (

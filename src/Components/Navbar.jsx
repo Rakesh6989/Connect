@@ -17,8 +17,8 @@ const Navbar = () => {
             <Link to="/" className="hover:text-blue-500">
               Home
             </Link>
-            <Link to="/reels" className="hover:text-blue-500">
-              Reels
+            <Link to="/short-clips" className="hover:text-blue-500">
+             Short Clips
             </Link>
             <Link to="/marketplace" className="hover:text-blue-500">
               Marketplace
@@ -61,7 +61,7 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={toggleMenu}
-              to="/reels"
+              to="/short-clips"
               className="block hover:text-blue-500"
             >
               Reels
